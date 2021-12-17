@@ -10,18 +10,13 @@ app.use('/racelist', racelist)
 
 
 
+
 app.listen(3000, () => {
     console.log('Server running on 3000')
 });
 
 
-app.post('/newRace', (req, res) => {
 
-        const race = req.body.name
-        raceList.push({race}); 
-
-         res.send('race created')
-    });
 
 app.get('/', (req, res) => {
     res.send(200)
