@@ -21,11 +21,11 @@ body request: {name:string, location:string}
 
 response: 'Race created' 
 
-<h4> POST/racelist/deleteRace/id={number:array.indexOf} </h4> 
+<h4> POST/racelist/deleteRace/id={array.indexOf} </h4> 
 
 response: 'Race deleted' 
 
-<h4> POST/racelist/updateRace/id={number:array.indexOf} </h4> 
+<h4> POST/racelist/updateRace/id={array.indexOf} </h4> 
 
 response: 'Race updated' 
 
