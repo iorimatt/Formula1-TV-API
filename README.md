@@ -3,7 +3,9 @@
 
 <h3>SERVER RUN IN LOCALHOST 3000 </h3>
 
-<p> command: node app.js</p>
+<p> SIMPLE API for a Formula 1 TV Project </p> 
+
+</p> command: node app.js </p>
  
 <h3> API ENDPOINTS </h3>
 
