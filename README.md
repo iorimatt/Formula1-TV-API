@@ -7,7 +7,7 @@
 
 </p> command: node app.js </p>
  
-<h3> API DOC </h3>
+<h3> API DOCUMENTATION </h3>
 
 See: https://documenter.getpostman.com/view/18722919/UVRAKnP7
 
