@@ -1,11 +1,35 @@
-const { Router } = require("express");
+const { Router, json } = require("express");
 const fs = require('fs');
-const { send } = require("process");
 const router = Router()
+var cors = require('cors')
+
+
+
 const raceList = [];
-router.get('/', (req, res) => {
-    res.send(raceList)
+
+
+
+router.get('/', cors(), (req, res) => {
+   
+    fs.readFile('race-list.json', 'utf-8', (err, data)=> {
+
+        if(err) {
+
+            console.log(err)
+
+        }
+
+        const raceList = JSON.parse(data)
+        return res.send(raceList)
+
+
+    })
+
+
 })
+
+
+
 router.post('/newList', (req, res) => {
  
   
@@ -20,13 +44,19 @@ router.post('/newList', (req, res) => {
         res.send('list created')
     })
 })
+
+
+//create race
+
 router.post('/createRace', (req, res) => {
+
     fs.readFile('race-list.json', 'utf-8', (err, data)=>{
         if(err){console.log(err) }
         const raceList = JSON.parse(data.toString())
         const race = {
             name: req.body.name,
-            location: req.body.location
+            date: req.body.date,
+            time: req.body.time
         }
         
         raceList.push({ race });
@@ -42,6 +72,11 @@ router.post('/createRace', (req, res) => {
    
    
 });
+
+
+//delete race 
+
+
 router.post('/deleteRace/id=:id', (req, res) => {
     fs.readFile('race-list.json', 'utf-8', (err, data) => {
         if (err) { console.log(err)  }
@@ -57,6 +92,10 @@ router.post('/deleteRace/id=:id', (req, res) => {
         })
     })
 },
+
+
+//update race 
+
     router.put('/updateRace/id=:id', (req, res) => {
             
           fs.readFile('race-list.json', 'utf-8', (err, data) => {
