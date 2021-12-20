@@ -59,7 +59,7 @@ router.post('/createRace', (req, res) => {
             time: req.body.time
         }
         
-        raceList.push({ race });
+        raceList.push(race);
         data = JSON.stringify(raceList)
         fs.writeFile('race-list.json', data, (err) => {
             if (err) { console.log(err)  }
