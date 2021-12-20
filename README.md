@@ -7,41 +7,11 @@
 
 </p> command: node app.js </p>
  
-<h3> API ENDPOINTS </h3>
+<h3> API DOC </h3>
+
+See: https://go.postman.co/workspace/My-Workspace~44d57faf-061f-4956-8b38-273747018b35/collection/18722919-372e0f78-9d11-4c2d-a380-755ff2bad76c
 
 
-
-<h4> GET/racelist </h4> 
-
-response: an array of race-list.json 
-
-
-
-<h4> POST/racelist/createRace </h4> 
-
-body request: {
-
-name:string, 
-date:string, 
-time:string
-
-}
-
-response: 'Race created' 
-
-<h4> POST/racelist/deleteRace/id={array.indexOf} </h4> 
-
-response: 'Race deleted' 
-
-<h4> POST/racelist/updateRace/id={array.indexOf} </h4> 
-
-response: 'Race updated' 
-
-<h3> Call this endpoint to avoid errors, if you delete a race-list.json  </h3> 
-
-<h4> POST/racelist/newList </h4> 
-
-response: 'List created' 
 
 
 
