@@ -9,7 +9,7 @@
  
 <h3> API DOC </h3>
 
-See: https://go.postman.co/workspace/My-Workspace~44d57faf-061f-4956-8b38-273747018b35/collection/18722919-372e0f78-9d11-4c2d-a380-755ff2bad76c
+See: https://documenter.getpostman.com/view/18722919/UVRAKnP7
 
 
 
