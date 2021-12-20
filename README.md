@@ -19,7 +19,13 @@ response: an array of race-list.json
 
 <h4> POST/racelist/createRace </h4> 
 
-body request: {name:string, location:string}
+body request: {
+
+name:string, 
+date:string, 
+time:string
+
+}
 
 response: 'Race created' 
 
