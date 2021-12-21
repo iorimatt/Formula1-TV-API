@@ -2,6 +2,7 @@ const { Router, json } = require("express");
 const fs = require('fs');
 const router = Router()
 var cors = require('cors')
+const { body, validationResult } = require('express-validator');
 
 
 const dataStore = __dirname + '/../store/racelist-db.json'
@@ -48,7 +49,18 @@ router.post('/newList', (req, res) => {
 
 //create race
 
-router.post('/createRace', (req, res) => {
+router.post('/createRace', 
+
+body('name', 'invalid format').toString(), 
+body('date', 'invalid format').toDate(),
+body('time', 'invalid format').toString(), 
+
+
+(req, res) => {
+
+    errors = validationResult(req)
+    if (!errors.isEmpty()) { return res.status(400).json({ errors: errors.array() }) }
+
 
     fs.readFile(dataStore, 'utf-8', (err, data) => {
         if (err) { console.log(err) }
@@ -96,7 +108,16 @@ router.delete('/deleteRace/id=:id', (req, res) => {
 
     //update race 
 
-    router.put('/updateRace/id=:id', (req, res) => {
+    router.put('/updateRace/id=:id', 
+    
+    body('name', 'invalid format').toString(), 
+    body('date', 'invalid format').toDate(),
+    body('time', 'invalid format').toString(), 
+    
+    (req, res) => {
+
+        errors = validationResult(req)
+        if (!errors.isEmpty()) { return res.status(400).json({ errors: errors.array() }) }
 
         fs.readFile(dataStore, 'utf-8', (err, data) => {
             if (err) { throw err }

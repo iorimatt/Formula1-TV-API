@@ -1,16 +1,1 @@
-[{
-  "name": "Formula 1 Sprint Race - São Paulo",
-  "img": "https://f1tv.formula1.com/image-resizer/image/1000004831-283d7c1e-a0a8-4d06-8d7f-21d9962c410d?w=1328&h=569&q=HI&o=L",
-  "linkTo": "/video1",
-  "videoDuration": "00:23:10"
-},{
-  "name": "Haas Ganha novo patrocinador",
-  "img": "https://f1tv.formula1.com/image-resizer/image/1000004833-56c856fa-7407-43b9-93da-7949172a6737?w=1328&h=569&q=HI&o=L",
-  "linkTo": "/video2",
-  "videoDuration": "00:32:05"
-},{
-  "name": "Aquecimento para o fim de semana",
-  "img": "https://f1tv.formula1.com/image-resizer/image/1000004944-ab2d95ad-a558-4893-aad9-609d080ef16f?w=1328&h=569&q=HI&o=L",
-  "linkTo": "/video3",
-  "videoDuration": "00:10:54"
-}]
+[{"name":"Haas Ganha novo patrocinador","img":"https://f1tv.formula1.com/image-resizer/image/1000004833-56c856fa-7407-43b9-93da-7949172a6737?w=1328&h=569&q=HI&o=L","linkTo":"/video2","videoDuration":"00:32:05"},{"name":"Aquecimento para o fim de semana","img":"https://f1tv.formula1.com/image-resizer/image/1000004944-ab2d95ad-a558-4893-aad9-609d080ef16f?w=1328&h=569&q=HI&o=L","linkTo":"/video3","videoDuration":"00:10:54"}]
